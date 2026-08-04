@@ -179,3 +179,61 @@ body.site-body {
         text-align: center;
     }
 }
+
+/* Scroll-reveal transition */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.15s steps(4, end), transform 0.15s steps(4, end);
+}
+
+/* NES-style button press snap */
+.nes-btn:active {
+    transform: translate(2px, 2px);
+}
+
+/* Pixel-flicker hover on nav links and section titles */
+.nav-link:hover,
+.section-title:hover {
+    animation: pixel-flicker 0.4s steps(2, end) infinite;
+}
+
+@keyframes pixel-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Project row / skill card hover jump */
+.project-row,
+.skill-sub {
+    transition: transform 0s;
+}
+
+.project-row:hover,
+.skill-sub:hover {
+    transform: translateY(-6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+    .nav-link:hover,
+    .section-title:hover {
+        animation: none !important;
+    }
+    .project-row:hover,
+    .skill-sub:hover {
+        transform: none !important;
+    }
+    .nes-btn:active {
+        transform: none !important;
+    }
+}
