@@ -1,0 +1,23 @@
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.skill-sub {
+    width: 260px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
