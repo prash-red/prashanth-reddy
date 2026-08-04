@@ -1,0 +1,82 @@
+:root {
+    --bg: #f7f5f0;
+    --text: #1b1b1b;
+    --accent: #d92626;
+    --font-pixel: 'Press Start 2P', system-ui, sans-serif;
+    --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 5rem;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+.page-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.pixel-text {
+    font-family: var(--font-pixel);
+}
+
+.nes-btn:active {
+    transform: translate(2px, 2px);
+}
+
+.pixel-flicker:hover {
+    animation: pixel-flicker 0.4s steps(2, end) infinite;
+}
+
+@keyframes pixel-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.hover-jump {
+    transition: transform 0s;
+}
+
+.hover-jump:hover {
+    transform: translateY(-6px);
+}
+
+.page-enter {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s steps(4, end), transform 0.2s steps(4, end);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pixel-flicker:hover {
+        animation: none !important;
+    }
+    .hover-jump:hover {
+        transform: none !important;
+    }
+    .nes-btn:active {
+        transform: none !important;
+    }
+    .page-enter,
+    .page-enter-active {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
