@@ -4,6 +4,10 @@
     --accent: #d92626;
 }
 
+html {
+    scroll-padding-top: 5rem;
+}
+
 body.site-body {
     background: var(--bg);
     color: var(--text);
@@ -143,6 +147,14 @@ body.site-body {
     min-width: 200px;
 }
 
+.project-subtitle {
+    color: var(--accent);
+}
+
+.small-text {
+    font-size: 10px;
+}
+
 .pdf {
     height: 500px;
     width: 100%;
@@ -166,6 +178,10 @@ body.site-body {
 
 .footer-links {
     gap: 0.75rem;
+}
+
+.footer-copy {
+    font-size: 10px;
 }
 
 @media (max-width: 600px) {
