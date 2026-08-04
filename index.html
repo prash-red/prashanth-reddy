@@ -9,14 +9,14 @@
     <title>Personal Site</title>
 </head>
 
-<body class = "background">
-    
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+<body class="site-body">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
@@ -34,274 +34,169 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
-            </ul>   
-            
+            </ul>
           </div>
         </div>
       </nav>
-    <div class="container-fluid p-3 p-md-5 text-center d-flex align-items-center justify-content-center home">
-        <div class="col-xl-auto mx-auto">
-            <h1 class="display-3 fw-bold text-white">Prashanth Reddy</h1>
-            <h3 class="fw-normal text-warning mb-3">Computer Science @ University of Toronto '26</h3>
-            <div class = 'container d-flex justify-content-center mb-4'>
-                <a class="nes-btn is-error mx-3" href = "https://www.linkedin.com/in/prashanthreddy/" target = "_blank"><i class="nes-icon linkedin is-medium"></i></a>
-                <a class="nes-btn is-success mx-3" href="https://github.com/prash-red" target="_blank"><i class="nes-icon github is-medium"></i></a>
+
+    <header class="page-wrap bio" id="about">
+        <div class="bio-top">
+            <img src="assets/images/me.jpeg" class="profile" alt="Prashanth Reddy">
+            <div class="bio-intro">
+                <h1 class="site-name">Prashanth Reddy</h1>
+                <h3 class="site-subtitle">Computer Science @ University of Toronto '26</h3>
+                <div class="social-links">
+                    <a class="nes-btn is-error" href="https://www.linkedin.com/in/prashanthreddy/" target="_blank"><i class="nes-icon linkedin is-medium"></i></a>
+                    <a class="nes-btn is-success" href="https://github.com/prash-red" target="_blank"><i class="nes-icon github is-medium"></i></a>
+                    <a class="nes-btn is-warning" href="assets/docs/resume.pdf" target="_blank">Resume</a>
+                </div>
             </div>
-            <a class=" nes-btn is-warning" href="assets/resume.pdf" target="_blank">Resume</a>
         </div>
-    </div>
+        <ul class="bio-list reveal">
+            <li class="list-item">
+                <img src="assets/icons/emojis/waving-hand.png" height="20px" alt="">
+                <p>Hello! I'm Prashanth, a passionate second-year student, eagerly exploring the world of Software Engineering and technology.</p>
+            </li>
+            <li class="list-item">
+                <img src="assets/icons/emojis/grad-cap.png" height="20px" alt="">
+                <p>I'm pursuing an HBSc with a Specialist in Computer Science (ASIP co-op), graduating class of 2026.</p>
+            </li>
+            <li class="list-item">
+                <img src="assets/icons/emojis/man-tech.png" height="20px" alt="">
+                <p>I've gained valuable experience as a Trading Developer at TradeBeez Brokers in Dubai. Additionally, I contributed as a Mesh Maker Software Developer at Nia Technologies in Toronto, enhancing proprietary software with a user-friendly mesh creation interface.</p>
+            </li>
+            <li class="list-item">
+                <img src="assets/icons/emojis/rocket.png" height="20px" alt="">
+                <p>In terms of projects, my work spans diverse areas. I developed a Line Drawing Classifier using TensorFlow, HTML, CSS, and JavaScript, enabling the recognition and classification of line drawings. Another exciting project was "GuessWho AI," a digital version of the Guess Who game featuring an AI opponent, employing decision tree algorithms.</p>
+            </li>
+            <li class="list-item">
+                <img src="assets/icons/emojis/guitar.png" height="20px" alt="">
+                <p>Apart from my passion for Software Engineering, I am also deeply intrigued by the intersection of artificial intelligence and math, constantly seeking ways to integrate these fields into my projects and research. Additionally, I have a keen interest in music, especially playing the guitar.</p>
+            </li>
+        </ul>
+    </header>
 
+    <hr class="section-divider">
 
-    <div class = 'container-fluid about' id = 'about'>
-        <h2 class = "text-center text-white my-5">About Me</h2>
-        <div class = "row align-items-center">
-            <div class = "col-4 text-center"><img src = "assets/me.jpeg" class = 'profile'></div>
-            <div class = "col-6">
-                <ul class="text-white small-text">
-                    <ul>
-                        <li>
-                            <div class="list-item">
-                                <img src="assets/pixelated emojis/waving hand.png" height="20px">
-                                <p>Hello! I'm Prashanth, a passionate second-year student, eagerly exploring the world of Software Engineering and technology.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-item">
-                                <img src="assets/pixelated emojis/grad cap.png" height="20px">
-                                <p>I'm pursuing an HBSc with a Specialist in Computer Science (ASIP co-op), graduating class of 2026.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-item">
-                                <img src="assets/pixelated emojis/man tech.png" height="20px">
-                                <p>I've gained valuable experience as a Trading Developer at TradeBeez Brokers in Dubai. Additionally, I contributed as a Mesh Maker Software Developer at Nia Technologies in Toronto, enhancing proprietary software with a user-friendly mesh creation interface.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-item">
-                                <img src="assets/pixelated emojis/rocket.png" height="20px">
-                                <p>In terms of projects, my work spans diverse areas. I developed a Line Drawing Classifier using TensorFlow, HTML, CSS, and JavaScript, enabling the recognition and classification of line drawings. Another exciting project was "GuessWho AI," a digital version of the Guess Who game featuring an AI opponent, employing decision tree algorithms.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-item">
-                                <img src="assets/pixelated emojis/guitar.png" height="20px">
-                                <p>Apart from my passion for Software Engineering, I am also deeply intrigued by the intersection of artificial intelligence and math, constantly seeking ways to integrate these fields into my projects and research. Additionally, I have a keen interest in music, especially playing the guitar.</p>
-                            </div>
-                        </li>
-                    </ul>                    
+    <section class="page-wrap reveal" id="skills">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+            <div class="nes-container is-dark is-centered with-title skill-sub">
+                <p class="title">Languages</p>
+                <ul class="text-white no-bullets">
+                    <li><div class="skill-item"><img src="assets/icons/skills/python.png" height="20px" alt="">python</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/java.png" height="20px" alt="">java</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/html.png" height="20px" alt="">html</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/css-3.png" height="20px" alt="">css</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/js.png" height="20px" alt="">javascript</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/c-sharp.png" height="20px" alt="">C#</div></li>
+                </ul>
+            </div>
+            <div class="nes-container is-dark is-centered with-title skill-sub">
+                <p class="title">Frameworks</p>
+                <ul class="text-white no-bullets">
+                    <li><div class="skill-item"><img src="assets/icons/skills/react.png" height="20px" alt="">ReactJS</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/node.png" height="20px" alt="">NodeJS</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/express.png" height="20px" alt="">ExpressJS</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/flask.png" height="20px" alt="">flask</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/bootstrap.png" height="20px" alt="">bootstrap</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/opencv.png" height="25px" alt="">Opencv</div></li>
+                </ul>
+            </div>
+            <div class="nes-container is-dark is-centered with-title skill-sub">
+                <p class="title">Databases</p>
+                <ul class="text-white no-bullets">
+                    <li><div class="skill-item"><img src="assets/icons/skills/sql.png" height="20px" alt="">MySQL</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/mongo.png" height="20px" alt="">MongoDB</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/firebase.png" height="20px" alt="">Firebase</div></li>
+                </ul>
+            </div>
+            <div class="nes-container is-dark is-centered with-title skill-sub">
+                <p class="title">Other Tools</p>
+                <ul class="text-white no-bullets">
+                    <li><div class="skill-item"><img src="assets/icons/skills/git.png" height="20px" alt="">Git</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/unity.jpg" height="20px" alt="">Unity</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/latex.png" height="8px" alt="">latex</div></li>
+                    <li><div class="skill-item"><img src="assets/icons/skills/vscode.png" height="20px" alt="">VS Code</div></li>
                 </ul>
             </div>
         </div>
-    </div>
-    
-    <h3 class = "text-center text-white my-5" id = 'skills'>Skills</h3>
+    </section>
 
-    <div class="container-fluid skills d-flex justify-content-center flex-wrap">
-        <div class="nes-container is-dark is-centered with-title skill-sub">
-            <p class="title">Languages</p>
-            <ul class = "text-white no-bullets">
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/python.png' height= 20px>python
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/java.png' height= 20px>java
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/html.png' height= 20px>html
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/css-3.png' height= 20px>css
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/js.png' height= 20px>javascript
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/c-sharp.png' height= 20px>C#
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="nes-container is-dark is-centered with-title skill-sub">
-            <p class="title">Frameworks</p>
-            <ul class = "text-white no-bullets">
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/react.png' height= 20px>ReactJS
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/node.png' height= 20px>NodeJS
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/express.png' height= 20px>ExpressJS
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/flask.png' height= 20px>flask
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/bootstrap.png' height= 20px>bootstrap
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/opencv.png' height= 25px>Opencv
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="nes-container is-dark is-centered with-title skill-sub">
-            <p class="title">Databases</p>
-            <ul class = "text-white no-bullets">
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/sql.png' height= 20px>MySQL
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/mongo.png' height= 20px>MongoDB
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/firebase.png' height= 20px>Firebase
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="nes-container is-dark is-centered with-title skill-sub">
-            <p class="title">Other Tools</p>
-            <ul class = "text-white no-bullets">
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/git.png' height= 20px>Git
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/unity.jpg' height= 20px>Unity
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/latex.png' height= 8px>latex
-                    </div>
-                </li>
-                <li>
-                    <div class = "skill-item">
-                        <img src = 'assets/skills icons/vscode.png' height= 20px>VS Code
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <hr class="section-divider">
 
-    <div class = "container" id = 'projects'>
-    <h3 class = "text-center text-white">Projects</h3>
-    <div class="album py-5 ">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
-            <div class="col">
-              <div class="card text-bg-dark shadow-lg">
-                <img src = "assets/projects assets/guesswho.jpg" class = "card-img-top">
-                <div class="card-body">
-                <h5 class="card-title">GuessWho AI</h5>
-                <h6 class="card-subtitle mb-2 text-info">Python App</h6>
-                  <p class="card-text">A project aimed at exploring different decision tree regression algorithms within the context of the game of Guess Who</p>
-                  <div class="d-flex align-items-center small-text">
-                    <div class="nes-badge me-3">
-                        <span class="is-primary">python</span>
-                    </div>
-                    <div class="nes-badge">
-                        <span class="is-warning">java</span>
-                    </div>
-                    <div class="ms-auto">
-                        <a href = "https://github.com/nsaroiu/GuessWho" target = "_blank"><i class="nes-icon github is-medium"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card text-bg-dark shadow-lg">
-                  <img src = "assets/projects assets/social-distance.png" class = "card-img-top">
-                  <div class="card-body">
-                  <h5 class="card-title">Social Distance Tracker</h5>
-                  <h6 class="card-subtitle mb-2 text-info">Python App</h6>
-                    <p class="card-text">Social Distance Tracker made using AI and CV. Developed using object detection and depth estimation on Nvidia Jetson MCU and Luxonis stereo camera</p>
+    <section class="page-wrap reveal" id="projects">
+        <h3 class="section-title">Projects</h3>
+        <div class="project-list">
+            <div class="project-row">
+                <img src="assets/projects/guesswho.jpg" class="project-thumb" alt="GuessWho AI">
+                <div class="project-body">
+                    <h5 class="project-title">GuessWho AI</h5>
+                    <h6 class="project-subtitle text-info">Python App</h6>
+                    <p>A project aimed at exploring different decision tree regression algorithms within the context of the game of Guess Who</p>
                     <div class="d-flex align-items-center small-text">
-                      <div class="nes-badge me-3">
-                          <span class="is-primary">python</span>
-                      </div>
-                      <div class="nes-badge">
-                          <span class="is-warning">OpenCV</span>
-                      </div>
-                      <div class="ms-auto">
-                          <a href = "https://github.com/prash-red/Social_Distance_Tracker" target = "_blank"><i class="nes-icon github is-medium"></i></a>
-                      </div>
+                        <div class="nes-badge me-3"><span class="is-primary">python</span></div>
+                        <div class="nes-badge"><span class="is-warning">java</span></div>
+                        <div class="ms-auto"><a href="https://github.com/nsaroiu/GuessWho" target="_blank"><i class="nes-icon github is-medium"></i></a></div>
                     </div>
-                  </div>
                 </div>
-              </div>
-          </div>
+            </div>
+            <div class="project-row">
+                <img src="assets/projects/social-distance.png" class="project-thumb" alt="Social Distance Tracker">
+                <div class="project-body">
+                    <h5 class="project-title">Social Distance Tracker</h5>
+                    <h6 class="project-subtitle text-info">Python App</h6>
+                    <p>Social Distance Tracker made using AI and CV. Developed using object detection and depth estimation on Nvidia Jetson MCU and Luxonis stereo camera</p>
+                    <div class="d-flex align-items-center small-text">
+                        <div class="nes-badge me-3"><span class="is-primary">python</span></div>
+                        <div class="nes-badge"><span class="is-warning">OpenCV</span></div>
+                        <div class="ms-auto"><a href="https://github.com/prash-red/Social_Distance_Tracker" target="_blank"><i class="nes-icon github is-medium"></i></a></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    
-      <h3 class = "text-center text-white" id = 'resume'>Resume</h3>
-      <div class = "container d-flex justify-content-center">
-        <iframe src="assets/resume.pdf" class = "pdf">
-            <p>Unable to display PDF file. <a href="assets/resume.pdf">Download</a> instead.</p>
-        </iframe>
-      </div>
+    </section>
 
-        <h3 class = "text-center text-white" id = 'contact'>Contact</h3>
-        <div class = "container d-flex justify-content-center">
+    <hr class="section-divider">
+
+    <section class="page-wrap reveal" id="resume">
+        <h3 class="section-title">Resume</h3>
+        <div class="d-flex justify-content-center">
+            <iframe src="assets/docs/resume.pdf" class="pdf">
+                <p>Unable to display PDF file. <a href="assets/docs/resume.pdf">Download</a> instead.</p>
+            </iframe>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="page-wrap reveal" id="contact">
+        <h3 class="section-title">Contact</h3>
+        <div class="d-flex justify-content-center">
             <div class="nes-container is-dark d-flex flex-wrap justify-content-center">
                 <div class="nes-container is-dark is-centered with-title">
                     <p class="title text-info">Personal</p>
-                    <a href = "mailto: shyamalaprashanth2004@gmail.com" class = "text-white small-text">shyamalaprashanth2004@gmail.com</a>
+                    <a href="mailto:shyamalaprashanth2004@gmail.com" class="text-white small-text">shyamalaprashanth2004@gmail.com</a>
                 </div>
                 <div class="nes-container is-dark is-centered with-title">
                     <p class="title text-warning">Academic</p>
-                    <a href = "mailto: prashanth.shyamala@mail.utoronto.ca" class = "text-white small-text">prashanth.shyamala@mail.utoronto.ca</a>
+                    <a href="mailto:prashanth.shyamala@mail.utoronto.ca" class="text-white small-text">prashanth.shyamala@mail.utoronto.ca</a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-bg-dark">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2026 Prashanth Reddy</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/prashanthreddy/" target="_blank"><i class="nes-icon linkedin is-medium"></i></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/prash-red" target="_blank"><i class="nes-icon github is-medium"></i></a></li>
-              </ul>
-            </footer>
-          </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="page-wrap footer-inner">
+            <span class="footer-copy">© 2026 Prashanth Reddy</span>
+            <ul class="nav footer-links list-unstyled d-flex">
+                <li class="ms-3"><a href="https://www.linkedin.com/in/prashanthreddy/" target="_blank"><i class="nes-icon linkedin is-medium"></i></a></li>
+                <li class="ms-3"><a href="https://github.com/prash-red" target="_blank"><i class="nes-icon github is-medium"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
 </body>
 
 </html>
