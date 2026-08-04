@@ -32,5 +32,5 @@
 }
 
 .nav-link-active {
-    color: #d92626;
+    color: var(--accent-on-dark);
 }

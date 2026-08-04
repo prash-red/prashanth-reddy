@@ -6,6 +6,7 @@ export default function PageTransition({ children }) {
     const [entered, setEntered] = useState(reducedMotion)
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         if (reducedMotion) {
             setEntered(true)
             return

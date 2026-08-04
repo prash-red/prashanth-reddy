@@ -46,7 +46,7 @@ export default function Projects() {
                                 <h5 className="project-title">{project.title}</h5>
                                 <h6 className="project-subtitle">{project.subtitle}</h6>
                                 <p>{project.description}</p>
-                                <div className="d-flex align-items-center">
+                                <div className="project-meta">
                                     {project.tags.map((tag) => (
                                         <div className="nes-badge" key={tag.label} style={{ marginRight: '0.75rem' }}>
                                             <span className={tag.className}>{tag.label}</span>

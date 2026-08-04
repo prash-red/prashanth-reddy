@@ -30,3 +30,16 @@
 .project-subtitle {
     color: var(--accent);
 }
+
+.project-meta {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .project-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

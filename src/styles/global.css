@@ -2,16 +2,13 @@
     --bg: #f7f5f0;
     --text: #1b1b1b;
     --accent: #d92626;
+    --accent-on-dark: #ff6b6b;
     --font-pixel: 'Press Start 2P', system-ui, sans-serif;
     --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-padding-top: 5rem;
 }
 
 body {

@@ -53,7 +53,7 @@ export default function Skills() {
                     {SKILL_GROUPS.map((group) => (
                         <div
                             key={group.title}
-                            className="nes-container is-dark is-centered with-title skill-sub"
+                            className="nes-container is-dark is-centered with-title skill-sub hover-jump"
                         >
                             <p className="title">{group.title}</p>
                             <ul className="no-bullets">
