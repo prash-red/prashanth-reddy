@@ -1,0 +1,7 @@
+.pdf {
+    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1.5rem;
+    display: block;
+}
