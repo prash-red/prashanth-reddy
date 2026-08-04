@@ -1,0 +1,32 @@
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 1rem;
+}
+
+.project-thumb {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border: 4px solid var(--text);
+    flex-shrink: 0;
+}
+
+.project-body {
+    flex: 1;
+    min-width: 200px;
+}
+
+.project-subtitle {
+    color: var(--accent);
+}
