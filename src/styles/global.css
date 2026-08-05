@@ -48,7 +48,7 @@ body {
 }
 
 .pixel-flicker:hover {
-    animation: pixel-flicker 0.4s steps(2, end) infinite;
+    animation: pixel-flicker 0.6s ease-in-out infinite;
 }
 
 @keyframes pixel-flicker {
@@ -57,7 +57,7 @@ body {
 }
 
 .hover-jump {
-    transition: transform 0s;
+    transition: transform 0.2s ease-out;
 }
 
 .hover-jump:hover {
@@ -72,7 +72,7 @@ body {
 .page-enter-active {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.2s steps(4, end), transform 0.2s steps(4, end);
+    transition: opacity 0.35s ease-out, transform 0.35s ease-out;
 }
 
 @media (prefers-reduced-motion: reduce) {

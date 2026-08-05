@@ -3,7 +3,6 @@ import NavBar from './layout/NavBar.jsx'
 import Footer from './layout/Footer.jsx'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
-import Resume from './pages/Resume.jsx'
 import { asset } from './utils/asset.js'
 
 const BACKGROUND_STYLE = {
@@ -19,7 +18,6 @@ export default function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
-                        <Route path="/resume" element={<Resume />} />
                         <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>
                 </div>

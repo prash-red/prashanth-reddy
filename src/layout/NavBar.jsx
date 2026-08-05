@@ -4,7 +4,6 @@ import './NavBar.css'
 const NAV_LINKS = [
     { to: '/', label: 'About Me', end: true },
     { to: '/projects', label: 'Projects' },
-    { to: '/resume', label: 'Resume' },
 ]
 
 export default function NavBar() {

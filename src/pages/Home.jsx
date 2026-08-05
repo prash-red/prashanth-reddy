@@ -75,6 +75,16 @@ export default function Home() {
                             >
                                 <i className="nes-icon gmail is-medium"></i>
                             </a>
+                            <a
+                                className="nes-btn is-warning"
+                                href={asset('assets/docs/resume.pdf')}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="resume-icon-frame">
+                                    <i className="nes-mario"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>

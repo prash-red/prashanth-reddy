@@ -53,10 +53,33 @@
     margin-bottom: 1rem;
 }
 
+.resume-icon-frame {
+    display: inline-block;
+    width: 42px;
+    height: 48px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.resume-icon-frame .nes-mario {
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
 .social-links {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.social-links .nes-btn {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio-section {
