@@ -1,7 +1,6 @@
 .pdf {
-    height: 500px;
+    height: 85vh;
     width: 100%;
-    max-width: 500px;
-    margin: 1.5rem auto 0;
+    margin: 1.5rem 0 0;
     display: block;
 }

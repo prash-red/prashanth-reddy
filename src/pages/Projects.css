@@ -34,6 +34,27 @@
 .project-meta {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-icon {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.tag-small {
+    font-size: 0.6rem;
+}
+
+.project-github {
+    margin-left: auto;
 }
 
 @media (max-width: 600px) {

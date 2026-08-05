@@ -3,10 +3,8 @@ import './NavBar.css'
 
 const NAV_LINKS = [
     { to: '/', label: 'About Me', end: true },
-    { to: '/skills', label: 'Skills' },
     { to: '/projects', label: 'Projects' },
     { to: '/resume', label: 'Resume' },
-    { to: '/contact', label: 'Contact' },
 ]
 
 export default function NavBar() {

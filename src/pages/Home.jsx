@@ -2,21 +2,56 @@ import PageTransition from '../layout/PageTransition.jsx'
 import { asset } from '../utils/asset.js'
 import './Home.css'
 
+const EXPERIENCE = [
+    {
+        date: 'Jan 2026 – Present',
+        title: 'Undergraduate Researcher',
+        org: 'Dynamic Graphics Project',
+        orgLink: 'https://www.dgp.toronto.edu/',
+        location: 'University of Toronto, Canada',
+    },
+    {
+        date: 'May 2024 – Aug 2025',
+        title: 'Software Development Engineer Co-op',
+        org: 'Amazon Robotics',
+        orgLink: 'https://amazon.jobs/content/en/teams/ftr',
+        location: 'Toronto, Canada',
+    },
+]
+
+const EDUCATION = [
+    {
+        date: 'Sept 2022 – Apr 2027',
+        title: 'Honours BSc in Computer Science (ASIP Co-op)',
+        place: 'University of Toronto, Canada',
+    },
+]
+
 export default function Home() {
     return (
         <PageTransition>
             <div className="page-wrap">
                 <div className="bio-top">
-                    <img
-                        src={asset('assets/images/me.jpeg')}
-                        className="profile"
-                        alt="Prashanth Reddy"
-                    />
+                    <div className="profile-frame">
+                        <img
+                            src={asset('assets/images/me.jpeg')}
+                            className="profile"
+                            alt="Prashanth Reddy"
+                        />
+                    </div>
                     <div className="bio-intro">
                         <h1 className="site-name pixel-text">Prashanth Reddy</h1>
                         <h3 className="site-subtitle">
-                            Computer Science @ University of Toronto '26
+                            <a href="https://web.cs.toronto.edu/" target="_blank" rel="noreferrer">
+                                Computer Science @ University of Toronto '27
+                            </a>
                         </h3>
+                        <p className="site-institution">
+                            Undergraduate Researcher,{' '}
+                            <a href="https://www.dgp.toronto.edu/" target="_blank" rel="noreferrer">
+                                Dynamic Graphics Project
+                            </a>
+                        </p>
                         <div className="social-links">
                             <a
                                 className="nes-btn is-error"
@@ -35,63 +70,73 @@ export default function Home() {
                                 <i className="nes-icon github is-medium"></i>
                             </a>
                             <a
-                                className="nes-btn is-warning"
-                                href={asset('assets/docs/resume.pdf')}
-                                target="_blank"
-                                rel="noreferrer"
+                                className="nes-btn is-primary"
+                                href="mailto:shyamalaprashanth2004@gmail.com"
                             >
-                                Resume
+                                <i className="nes-icon gmail is-medium"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <ul className="bio-list">
-                    <li>
-                        <img src={asset('assets/icons/emojis/waving-hand.png')} height="20" alt="" />
-                        <p>
-                            Hello! I'm Prashanth, a passionate second-year student, eagerly
-                            exploring the world of Software Engineering and technology.
-                        </p>
-                    </li>
-                    <li>
-                        <img src={asset('assets/icons/emojis/grad-cap.png')} height="20" alt="" />
-                        <p>
-                            I'm pursuing an HBSc with a Specialist in Computer Science (ASIP
-                            co-op), graduating class of 2026.
-                        </p>
-                    </li>
-                    <li>
-                        <img src={asset('assets/icons/emojis/man-tech.png')} height="20" alt="" />
-                        <p>
-                            I've gained valuable experience as a Trading Developer at
-                            TradeBeez Brokers in Dubai. Additionally, I contributed as a Mesh
-                            Maker Software Developer at Nia Technologies in Toronto,
-                            enhancing proprietary software with a user-friendly mesh creation
-                            interface.
-                        </p>
-                    </li>
-                    <li>
-                        <img src={asset('assets/icons/emojis/rocket.png')} height="20" alt="" />
-                        <p>
-                            In terms of projects, my work spans diverse areas. I developed a
-                            Line Drawing Classifier using TensorFlow, HTML, CSS, and
-                            JavaScript, enabling the recognition and classification of line
-                            drawings. Another exciting project was "GuessWho AI," a digital
-                            version of the Guess Who game featuring an AI opponent, employing
-                            decision tree algorithms.
-                        </p>
-                    </li>
-                    <li>
-                        <img src={asset('assets/icons/emojis/guitar.png')} height="20" alt="" />
-                        <p>
-                            Apart from my passion for Software Engineering, I am also deeply
-                            intrigued by the intersection of artificial intelligence and
-                            math, constantly seeking ways to integrate these fields into my
-                            projects and research. Additionally, I have a keen interest in
-                            music, especially playing the guitar.
-                        </p>
-                    </li>
-                </ul>
+
+                <section className="bio-section">
+                    <h2 className="pixel-text">Biography</h2>
+                    <p>
+                        I'm an Undergraduate Researcher in the{' '}
+                        <a href="https://www.dgp.toronto.edu/" target="_blank" rel="noreferrer">
+                            Dynamic Graphics Project
+                        </a>{' '}
+                        at the University of Toronto, where I develop neural-accelerated
+                        Monte Carlo solvers for PDEs and unbiased inverse rendering methods
+                        for computational sensors. I'm pursuing an Honours BSc in Computer
+                        Science (ASIP co-op), graduating in 2027.
+                    </p>
+                    <p>
+                        My interests lie at the intersection of computer graphics,
+                        computational imaging, and machine learning — spanning
+                        differentiable rendering, neural scene representations, and applied
+                        CUDA/GPU programming.
+                    </p>
+                </section>
+
+                <section className="bio-section">
+                    <h2 className="pixel-text">Experience</h2>
+                    <ul className="timeline">
+                        {EXPERIENCE.map((item) => (
+                            <li key={item.title}>
+                                <span className="timeline-date">{item.date}</span>
+                                <div>
+                                    <strong>{item.title}</strong>
+                                    <p>
+                                        {item.orgLink ? (
+                                            <a href={item.orgLink} target="_blank" rel="noreferrer">
+                                                {item.org}
+                                            </a>
+                                        ) : (
+                                            item.org
+                                        )}
+                                        , {item.location}
+                                    </p>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                <section className="bio-section">
+                    <h2 className="pixel-text">Education</h2>
+                    <ul className="timeline">
+                        {EDUCATION.map((item) => (
+                            <li key={item.title}>
+                                <span className="timeline-date">{item.date}</span>
+                                <div>
+                                    <strong>{item.title}</strong>
+                                    <p>{item.place}</p>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
             </div>
         </PageTransition>
     )

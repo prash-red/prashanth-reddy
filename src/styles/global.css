@@ -1,6 +1,6 @@
 :root {
     --bg: #f7f5f0;
-    --text: #1b1b1b;
+    --text: #ffffff;
     --accent: #d92626;
     --accent-on-dark: #ff6b6b;
     --font-pixel: 'Press Start 2P', system-ui, sans-serif;
@@ -15,7 +15,22 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: var(--font-body);
+    font-family: var(--font-pixel);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.app-background {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content {
+    flex: 1 0 auto;
 }
 
 .page-wrap {

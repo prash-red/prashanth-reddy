@@ -6,13 +6,20 @@
     margin-bottom: 2rem;
 }
 
-.profile {
+.profile-frame {
     border: 4px solid var(--text);
-    border-radius: 50%;
-    height: 180px;
-    width: 180px;
-    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
     flex-shrink: 0;
+}
+
+.profile {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.4);
+    transform-origin: center;
 }
 
 .bio-intro {
@@ -26,9 +33,23 @@
 }
 
 .site-subtitle {
-    font-family: var(--font-body);
-    font-size: 1rem;
+    font-family: var(--font-pixel);
+    font-size: 0.85rem;
     color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.site-subtitle a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-subtitle a:hover {
+    text-decoration: underline;
+}
+
+.site-institution {
+    font-size: 0.85rem;
     margin-bottom: 1rem;
 }
 
@@ -38,23 +59,68 @@
     flex-wrap: wrap;
 }
 
-.bio-list {
+.bio-section {
+    margin-bottom: 2rem;
+}
+
+.bio-section h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bio-section p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.bio-section a,
+.site-institution a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.bio-section a:hover,
+.site-institution a:hover {
+    color: var(--accent);
+}
+
+.timeline {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.bio-list li {
+.timeline li {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 1rem;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.timeline-date {
+    flex-shrink: 0;
+    width: 160px;
+    font-size: 0.7rem;
+    color: #ffd500;
+}
+
+.timeline li p {
+    font-size: 0.75rem;
+    margin: 0.25rem 0 0;
 }
 
 @media (max-width: 600px) {
     .bio-top {
         flex-direction: column;
         text-align: center;
+    }
+
+    .timeline li {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .timeline-date {
+        width: auto;
     }
 }
